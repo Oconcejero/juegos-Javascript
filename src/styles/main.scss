@@ -1,0 +1,9 @@
+@use 'abstracts/variables';
+@use 'abstracts/mixins';
+@use 'base/reset';
+@use 'layout/header';
+@use 'components/button';
+
+body {
+background-color: black;
+}
