@@ -4,6 +4,58 @@
 @use 'layout/header';
 @use 'components/button';
 
+
+
 body {
-background-color: black;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: variables.$color-10;
+
+  .h1Principal {
+    display: flex;
+    justify-content: center;
+    font-family: variables.$primary-font;
+  }
+  .botonesJuegos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 50px;
+  }
+  .return {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .start {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .tablero {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+.cell {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #999;
+  background-color: #ccc;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cell.revelada {
+  background-color: #eee;
+}
+
+.cell.explosion {
+  background-color: red;
+  color: white;
+}
 }
