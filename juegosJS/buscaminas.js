@@ -140,9 +140,7 @@ botonComenzar.addEventListener('click', () => {
                 revelarZonaVacia(fila, columna, tablero, filasU, columnasU, tableroJuego);
                 comprobarVictoria(tablero, filasU, columnasU);
             }
-
         });
-
 
         celda.addEventListener('contextmenu', (e) => {
             e.preventDefault();
@@ -167,9 +165,6 @@ botonComenzar.addEventListener('click', () => {
         tableroJuego.appendChild(celda);
         }
     }
-
-    
-
     console.table(tablero);
 });
 
