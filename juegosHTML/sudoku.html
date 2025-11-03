@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buscaminas</title>
+    <title>Sudoku</title>
     <link rel="stylesheet" href="/src/styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,15 +11,24 @@
 </head>
 <body>
     <div class="h1Principal">
-        <h1 class="principal">Bienvenido al Buscaminas</h1>
+        <h1 class="principal">Bienvenido al Sudoku</h1>
     </div>
 
     <div class="return">
         <a class="returnButton" href="/index.html">VOLVER</a>
     </div>
-    <div class="start">
-        <button class="button">COMENZAMOS?</button>
+    <div class="startSudoku">
+        <button class="buttonStart">COMENZAMOS?</button>
+        <select name="dificultad" id="dificultad">
+            <option value="easy">Fácil</option>
+            <option value="medium">Media</option>
+            <option value="hard">Dificil</option>
+        </select>
+        <p>Pista absurda: Los números están colocados en "orden" para poder ganar rápido.<br>
+            1-2-3-4-5-6-7-8-9
+        </p>
     </div>
-    <script type="module" src="/juegosJS/buscaminas.js"></script>
+    <div class="tableroSudoku"></div>
+    <script type="module" src="/juegosJS/sudoku.js"></script>
 </body>
 </html>

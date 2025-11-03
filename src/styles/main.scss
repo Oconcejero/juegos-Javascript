@@ -39,23 +39,58 @@ body {
     justify-content: center;
     margin-top: 50px;
   }
-.cell {
-  width: 30px;
-  height: 30px;
-  border: 1px solid #999;
-  background-color: #ccc;
-  text-align: center;
-  line-height: 30px;
-  font-weight: bold;
-  cursor: pointer;
-}
+  .cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #999;
+    background-color: #ccc;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    font-family: variables.$primary-font;
 
-.cell.revelada {
-  background-color: #eee;
-}
+    cursor: pointer;
+  }
 
-.cell.explosion {
-  background-color: red;
-  color: white;
-}
+  .cell.revelada {
+    background-color: #eee;
+  }
+
+  .cell.explosion {
+    background-color: red;
+    color: white;
+  }
+  .startSudoku {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+    width: 150px;
+    gap: 25px;
+    select {
+      border: none;
+      padding: 10px 20px;
+      background-color: variables.$color-05;
+      border-radius: 15px;
+      font-family: variables.$primary-font;
+      color: white;
+    }
+    p {
+      font-family: variables.$primary-font;
+      text-align: center;
+    }
+  }
+  .tableroSudoku {
+    margin: auto;
+    margin-top: 50px;
+  }
+  .inputSudoku {
+    font-family: 'Momo Trust Display', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+  }
 }
