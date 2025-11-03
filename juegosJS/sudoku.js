@@ -88,7 +88,9 @@ function comprobarVictoria() {
     }
 
     if (victoria) {
+        tableroSudoku.style.backgroundColor = 'green';
         alert('🎉 ¡HAS GANADO!');
+        
     }
 }
 

@@ -148,15 +148,15 @@ botonComenzar.addEventListener('click', () => {
             e.preventDefault();
 
             if (!celda.classList.contains('revelada')) {
-                const banderaExistente = celda.querySelector('img.bandera');
+                const minaFijaExistente = celda.querySelector('img.minaFija');
 
-                if (banderaExistente) {
+                if (minaFijaExistente) {
                     celda.removeChild(banderaExistente);
                 } else {
                     const img = document.createElement('img');
                     img.src = '../src/img/mina_res.png';
-                    img.alt = 'bandera';
-                    img.classList.add('bandera');
+                    img.alt = 'minaFija';
+                    img.classList.add('minaFija');
                     img.style.width = '100%';
                     img.style.height = '100%';
                     celda.appendChild(img);

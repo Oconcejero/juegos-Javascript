@@ -79,11 +79,12 @@ body {
     p {
       font-family: variables.$primary-font;
       text-align: center;
+      width: 800px;
     }
   }
   .tableroSudoku {
     margin: auto;
-    margin-top: 50px;
+    margin-top: 25px;
   }
   .inputSudoku {
     font-family: 'Momo Trust Display', sans-serif;

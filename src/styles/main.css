@@ -142,10 +142,11 @@ body .startSudoku select {
 body .startSudoku p {
   font-family: "Momo Trust Display", sans-serif;
   text-align: center;
+  width: 800px;
 }
 body .tableroSudoku {
   margin: auto;
-  margin-top: 50px;
+  margin-top: 25px;
 }
 body .inputSudoku {
   font-family: "Momo Trust Display", sans-serif;
