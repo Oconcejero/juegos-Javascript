@@ -129,7 +129,7 @@ botonComenzar.addEventListener('click', () => {
             if (valor === 'mina') {
                 celda.textContent = '';
                 const img = document.createElement('img');
-                img.src = '/src/img/mina.png';
+                img.src = '../src/img/mina.png';
                 img.alt = 'mina';
                 img.style.width = '100%';
                 img.style.height = '100%';
@@ -154,7 +154,7 @@ botonComenzar.addEventListener('click', () => {
                     celda.removeChild(banderaExistente);
                 } else {
                     const img = document.createElement('img');
-                    img.src = '/src/img/mina_res.png';
+                    img.src = '../src/img/mina_res.png';
                     img.alt = 'bandera';
                     img.classList.add('bandera');
                     img.style.width = '100%';
