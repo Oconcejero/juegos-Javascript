@@ -12,4 +12,4 @@ Proyecto realizado con HTML, CSS, SASS y JAVASCRIPT para practicar la lógica en
 Puedes ver los ejercicios funcionando aquí: <br>
 🔗 [https://github.com/Oconcejero/JAVASCRIPT-JUEGOS/](https://oconcejero.github.io/JAVASCRIPT-JUEGOS/)
 
-Puedes ver una vista previa en vivo del encabezado ![Web Spa](img/JUEGOS_JAVASCRIPT.png)
+Puedes ver una vista previa en vivo de los juegos. ![Web Spa](img/JUEGOS_JAVASCRIPT.png)
