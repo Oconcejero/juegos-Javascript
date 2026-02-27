@@ -10,31 +10,50 @@
 }
 
 .button {
-  background-color: #7b2cbf;
-  padding: 15px 45px;
-  width: 210px;
-  border: none;
-  border-radius: 15px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
-  text-align: center;
   font-family: "Momo Trust Display", sans-serif;
-  font-size: 15px;
-  color: #dcd6f7;
+  font-size: 3.5rem;
+  color: white;
+  position: relative;
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  overflow: hidden;
+  border: none;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  transition: background 0.3s;
 }
 
 .button:hover {
-  background-color: #3c096c;
-  color: white;
-  padding: 15px 45px;
-  width: 210px;
-  border: none;
-  border-radius: 15px;
+  flex: 1.2;
+  font-size: 4.5rem;
+  text-shadow: 0 0 20px rgba(157, 78, 221, 0.8);
+}
+
+.button:hover::before {
+  background: rgba(0, 0, 0, 0);
+}
+
+.button:first-child {
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .return {
   display: flex;
   justify-content: center;
 }
+
 .return .returnButton {
   text-decoration: none;
   text-align: center;
@@ -45,6 +64,7 @@
   font-size: 13px;
   color: #dcd6f7;
 }
+
 .return .returnButton:hover {
   background-color: #7b2cbf;
 }
@@ -72,38 +92,58 @@
 }
 
 body {
-  margin-top: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
-  background-color: #3f3f5f;
-}
-body .h1Principal {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #1a1a2e;
+  font-family: 'Inter', sans-serif;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+}
+
+.h1Principal {
+  position: relative;
+  top: 5%;
+  width: 100%;
+  z-index: 10;
+  text-align: center;
+  pointer-events: none;
+}
+
+.h1Principal h1 {
   font-family: "Momo Trust Display", sans-serif;
+  font-size: 2.5rem;
+  padding-bottom: 25px;
+  color: white;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+  letter-spacing: 2px;
 }
-body .botonesJuegos {
+
+.botonesJuegos {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 25px;
-  margin-top: 50px;
+  height: 100vh;
+  width: 100vw;
+  gap: 0;
 }
+
 body .return {
   display: flex;
   justify-content: center;
   margin-top: 50px;
 }
+
 body .start {
   display: flex;
   justify-content: center;
   margin-top: 50px;
 }
+
 body .tablero {
   display: flex;
   justify-content: center;
   margin-top: 50px;
 }
+
 body .cell {
   width: 30px;
   height: 30px;
@@ -115,13 +155,16 @@ body .cell {
   font-family: "Momo Trust Display", sans-serif;
   cursor: pointer;
 }
+
 body .cell.revelada {
   background-color: #eee;
 }
+
 body .cell.explosion {
   background-color: red;
   color: white;
 }
+
 body .startSudoku {
   display: flex;
   flex-direction: column;
@@ -131,6 +174,7 @@ body .startSudoku {
   width: 150px;
   gap: 25px;
 }
+
 body .startSudoku select {
   border: none;
   padding: 10px 20px;
@@ -139,15 +183,18 @@ body .startSudoku select {
   font-family: "Momo Trust Display", sans-serif;
   color: white;
 }
+
 body .startSudoku p {
   font-family: "Momo Trust Display", sans-serif;
   text-align: center;
   width: 800px;
 }
+
 body .tableroSudoku {
   margin: auto;
   margin-top: 25px;
 }
+
 body .inputSudoku {
   font-family: "Momo Trust Display", sans-serif;
   font-size: 25px;
